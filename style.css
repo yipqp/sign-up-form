@@ -71,6 +71,7 @@ main > div {
 
 label {
     text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
 form {
@@ -78,6 +79,33 @@ form {
     padding: 20px 80px;
     background-color: var(--form-background);
     box-shadow: #00000048 2px 2px 8px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+
+
+form > .rows {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.rows > .form-row {
+    display: flex;
+    gap: 50px;
+}
+
+.form-row > .label-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row input {
+    font-size: 1rem;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
 }
 
 legend {
