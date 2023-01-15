@@ -124,11 +124,17 @@ form > .rows {
     background-color: #ca626434;
 }
 
-.form-row input:focus {
+.form-row input:focus,
+.form-row input:invalid:focus {
     border: 2px solid #6594ec;
+    background-color: inherit;
     box-shadow: #00000050 2px 2px 9px;
 }
 
+.button-container > button:focus{
+    outline: 2px solid #6594ec;
+}
+    
 legend {
     font-size: 2rem;
 }
@@ -138,16 +144,32 @@ legend {
     flex-direction: column;
 }
 
-button {
+.button-container > button {
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     border: none;
+    font-size: 1rem;
     margin: 35px 0;
-    width: 250px;
+    width: 225px;
     border-radius: 15px;
-    padding: 15px 20px;
-
+    padding: 12px 25px;
+    background-color: #785964;
+    color: #FFFFFC;
+    box-shadow: #02030359 2px 2px 7px;
+    transition: 0.1s all ease;
 }
+
+.button-container > button:hover {
+    transform: translateY(-3px);
+    color: #020303;
+    background-color: #d1a3b3;
+}
+
+.button-container > button:active {
+    transform: translateY(0px);
+    box-shadow: #02030359 1px 1px 5px;
+}
+
 
 a {
     text-decoration: underline;
