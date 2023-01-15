@@ -63,6 +63,7 @@ main > div {
     bottom: 0;
     text-align: center;
     padding: 10px;
+    font-size: 0.9rem;
 }
 
 svg {
@@ -148,7 +149,7 @@ button {
 
 }
 
-span > a {
-    text-decoration: none;
+a {
+    text-decoration: underline;
     color: inherit;
 }
