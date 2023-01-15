@@ -99,7 +99,7 @@ form {
 form > .rows {
     display: flex;
     flex-flow: column wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .rows > .form-row {
@@ -145,6 +145,13 @@ form > .rows {
     
 legend {
     font-size: 2rem;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    margin-top: 3px;
+    color: #ca6264;
+    visibility: hidden;
 }
 
 .button-container {

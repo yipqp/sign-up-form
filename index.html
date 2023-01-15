@@ -35,38 +35,43 @@
             <div class="rows">
                 <div class="form-row">
                     <div class="label-input">
-                        <label for="first-name">first name</label>
+                        <label for="first-name">* first name</label>
                         <input type="text" id="first-name" name="first-name" pattern="[a-zA-Z0-9]+" placeholder="meow" required>
+                        <span class="error-message first-name-error">* Name must only contain alphanumeric characters.</span>
                     </div>
                     <div class="label-input">
                         <label for="last-name">last name</label>
                         <input type="text" id="last-name" name="last-name" pattern="[a-zA-Z0-9]+" placeholder="meowmeow">
+                        <span class="error-message last-name-error">* Name must only contain alphanumeric characters.</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="label-input">
-                        <label for="email">email</label>
+                        <label for="email">* email</label>
                         <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                        <span class="error-message email-error">* Invalid email address.</span>
                     </div>
                     <div class="label-input">
                         <label for="phone-number">phone number</label>
                         <input type="tel" id="phone-number" name="phone-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-456-7890">
+                        <span class="error-message phone-number-error">* Invalid phone number (ex. 123-456-7890).</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="label-input">
-                        <label for="password">password</label>
-                        <input type="password" id="password" name="password" placeholder=" " required>
+                        <label for="password">* password</label>
+                        <input type="password" id="password" name="password" placeholder=" " pattern=".{6,}" required>
+                        <span class="error-message password-error">* Passwords must match and contain at least 6 characters.</span>
                     </div>
                     <div class="label-input">
-                        <label for="confirm-password">confirm password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" placeholder=" " required>
+                        <label for="confirm-password">* confirm password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder=" " pattern=".{6,}" required>
                     </div>
                 </div>
             </div>
         </form>
         <div class="button-container">
-            <button type="submit" form="register-form">Create Account</button>
+            <button type="submit" form="register-form" class="submit-button">Create Account</button>
             <span>Already have an account? <a href="#">Log in</a></span>
         </div>
     </main>
